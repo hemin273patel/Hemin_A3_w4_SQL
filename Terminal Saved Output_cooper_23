@@ -1,0 +1,1281 @@
+Last login: Fri Feb 23 08:57:34 on console
+tss-hr420-dm25:~ h_patel273$ cd /Users/h_patel273/Desktop/A3_W4_SQL-master 
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ npm install
+nodesql@0.0.0 /Users/h_patel273/Desktop/A3_W4_SQL-master
+├─┬ body-parser@1.17.2 
+│ ├── bytes@2.4.0 
+│ ├── content-type@1.0.4 
+│ ├── debug@2.6.7 
+│ ├── depd@1.1.2 
+│ ├─┬ http-errors@1.6.2 
+│ │ ├── depd@1.1.1 
+│ │ ├── inherits@2.0.3 
+│ │ └── statuses@1.4.0 
+│ ├── iconv-lite@0.4.15 
+│ ├─┬ on-finished@2.3.0 
+│ │ └── ee-first@1.1.1 
+│ ├── qs@6.4.0 
+│ ├─┬ raw-body@2.2.0 
+│ │ └── unpipe@1.0.0 
+│ └─┬ type-is@1.6.16 
+│   ├── media-typer@0.3.0 
+│   └─┬ mime-types@2.1.18 
+│     └── mime-db@1.33.0 
+├─┬ cookie-parser@1.4.3 
+│ ├── cookie@0.3.1 
+│ └── cookie-signature@1.0.6 
+├─┬ debug@2.6.9 
+│ └── ms@2.0.0 
+├─┬ express@4.15.5 
+│ ├─┬ accepts@1.3.4 
+│ │ └── negotiator@0.6.1 
+│ ├── array-flatten@1.1.1 
+│ ├── content-disposition@0.5.2 
+│ ├── encodeurl@1.0.2 
+│ ├── escape-html@1.0.3 
+│ ├── etag@1.8.1 
+│ ├─┬ finalhandler@1.0.6 
+│ │ └── statuses@1.3.1 
+│ ├── fresh@0.5.2 
+│ ├── merge-descriptors@1.0.1 
+│ ├── methods@1.1.2 
+│ ├── parseurl@1.3.2 
+│ ├── path-to-regexp@0.1.7 
+│ ├─┬ proxy-addr@1.1.5 
+│ │ ├── forwarded@0.1.2 
+│ │ └── ipaddr.js@1.4.0 
+│ ├── qs@6.5.0 
+│ ├── range-parser@1.2.0 
+│ ├─┬ send@0.15.6 
+│ │ ├── destroy@1.0.4 
+│ │ ├── mime@1.3.4 
+│ │ └── statuses@1.3.1 
+│ ├── serve-static@1.12.6 
+│ ├── setprototypeof@1.0.3 
+│ ├── statuses@1.3.1 
+│ ├── utils-merge@1.0.0 
+│ └── vary@1.1.2 
+├─┬ express-handlebars@3.0.0 
+│ ├─┬ glob@6.0.4 
+│ │ ├─┬ inflight@1.0.6 
+│ │ │ └── wrappy@1.0.2 
+│ │ ├─┬ minimatch@3.0.4 
+│ │ │ └─┬ brace-expansion@1.1.11 
+│ │ │   ├── balanced-match@1.0.0 
+│ │ │   └── concat-map@0.0.1 
+│ │ ├── once@1.4.0 
+│ │ └── path-is-absolute@1.0.1 
+│ ├── graceful-fs@4.1.11 
+│ ├─┬ handlebars@4.0.11 
+│ │ ├── async@1.5.2 
+│ │ ├─┬ optimist@0.6.1 
+│ │ │ ├── minimist@0.0.10 
+│ │ │ └── wordwrap@0.0.3 
+│ │ ├─┬ source-map@0.4.4 
+│ │ │ └── amdefine@1.0.1 
+│ │ └─┬ uglify-js@2.8.29 
+│ │   ├── source-map@0.5.7 
+│ │   ├── uglify-to-browserify@1.0.2 
+│ │   └─┬ yargs@3.10.0 
+│ │     ├── camelcase@1.2.1 
+│ │     ├─┬ cliui@2.1.0 
+│ │     │ ├─┬ center-align@0.1.3 
+│ │     │ │ ├─┬ align-text@0.1.4 
+│ │     │ │ │ ├─┬ kind-of@3.2.2 
+│ │     │ │ │ │ └── is-buffer@1.1.6 
+│ │     │ │ │ ├── longest@1.0.1 
+│ │     │ │ │ └── repeat-string@1.6.1 
+│ │     │ │ └── lazy-cache@1.0.4 
+│ │     │ ├── right-align@0.1.3 
+│ │     │ └── wordwrap@0.0.2 
+│ │     ├── decamelize@1.2.0 
+│ │     └── window-size@0.1.0 
+│ ├─┬ object.assign@4.1.0 
+│ │ ├─┬ define-properties@1.1.2 
+│ │ │ └── foreach@2.0.5 
+│ │ ├── function-bind@1.1.1 
+│ │ ├── has-symbols@1.0.0 
+│ │ └── object-keys@1.0.11 
+│ └─┬ promise@7.3.1 
+│   └── asap@2.0.6 
+├─┬ morgan@1.8.2 
+│ ├── basic-auth@1.1.0 
+│ ├── debug@2.6.8 
+│ └── on-headers@1.0.1 
+├─┬ mysql@2.15.0 
+│ ├── bignumber.js@4.0.4 
+│ ├─┬ readable-stream@2.3.3 
+│ │ ├── core-util-is@1.0.2 
+│ │ ├── isarray@1.0.0 
+│ │ ├── process-nextick-args@1.0.7 
+│ │ ├── string_decoder@1.0.3 
+│ │ └── util-deprecate@1.0.2 
+│ ├── safe-buffer@5.1.1 
+│ └── sqlstring@2.3.0 
+└── serve-favicon@2.4.5 
+
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ npm install express-handlebars
+nodesql@0.0.0 /Users/h_patel273/Desktop/A3_W4_SQL-master
+└── express-handlebars@3.0.0 
+
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ npm start
+
+> nodesql@0.0.0 start /Users/h_patel273/Desktop/A3_W4_SQL-master
+> node ./bin/www
+
+on 3000
+Port 3000 is already in use
+
+npm ERR! Darwin 16.7.0
+npm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+npm ERR! node v6.11.1
+npm ERR! npm  v3.10.10
+npm ERR! code ELIFECYCLE
+npm ERR! nodesql@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the nodesql@0.0.0 start script 'node ./bin/www'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the nodesql package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node ./bin/www
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs nodesql
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls nodesql
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /Users/h_patel273/Desktop/A3_W4_SQL-master/npm-debug.log
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ node app
+on 3000
+GET / 200 37.882 ms - 855
+GET /javascripts/main.js 200 4.290 ms - 921
+GET /favicon.ico 404 3.313 ms - 1429
+Error: Failed to lookup view "error" in views directory "/Users/h_patel273/Desktop/A3_W4_SQL-master/views"
+    at EventEmitter.render (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/response.js:971:7)
+    at /Users/h_patel273/Desktop/A3_W4_SQL-master/app.js:51:7
+    at Layer.handle_error (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/index.js:315:13)
+    at /Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/index.js:275:10)
+    at /Users/h_patel273/Desktop/A3_W4_SQL-master/app.js:40:3
+    at Layer.handle [as handle_request] (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/layer.js:95:5)
+^C
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ node app
+on 3000
+GET / 304 31.889 ms - -
+GET /javascripts/main.js 304 2.637 ms - -
+GET / 304 6.282 ms - -
+GET /javascripts/main.js 304 1.059 ms - -
+^C
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ cd views
+tss-hr420-dm25:views h_patel273$ touch error.handlebars
+tss-hr420-dm25:views h_patel273$ npm start
+
+> nodesql@0.0.0 start /Users/h_patel273/Desktop/A3_W4_SQL-master
+> node ./bin/www
+
+/Users/h_patel273/Desktop/A3_W4_SQL-master/routes/api.js:9
+    console.log("hiit api eith the params"):
+                                           ^
+SyntaxError: Unexpected token :
+    at createScript (vm.js:56:10)
+    at Object.runInThisContext (vm.js:97:10)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/Users/h_patel273/Desktop/A3_W4_SQL-master/app.js:32:9)
+
+npm ERR! Darwin 16.7.0
+npm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+npm ERR! node v6.11.1
+npm ERR! npm  v3.10.10
+npm ERR! code ELIFECYCLE
+npm ERR! nodesql@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the nodesql@0.0.0 start script 'node ./bin/www'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the nodesql package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node ./bin/www
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs nodesql
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls nodesql
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /Users/h_patel273/Desktop/A3_W4_SQL-master/views/npm-debug.log
+tss-hr420-dm25:views h_patel273$ node app
+module.js:471
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/h_patel273/Desktop/A3_W4_SQL-master/views/app'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.runMain (module.js:604:10)
+    at run (bootstrap_node.js:389:7)
+    at startup (bootstrap_node.js:149:9)
+    at bootstrap_node.js:504:3
+tss-hr420-dm25:views h_patel273$ cd ./
+tss-hr420-dm25:views h_patel273$ cd ./
+tss-hr420-dm25:views h_patel273$ cd .//
+tss-hr420-dm25:views h_patel273$ cd desktop
+-bash: cd: desktop: No such file or directory
+tss-hr420-dm25:views h_patel273$ cd /Users/h_patel273/Desktop/A3_W4_SQL-master 
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ node app
+/Users/h_patel273/Desktop/A3_W4_SQL-master/routes/api.js:9
+    console.log("hiit api eith the params"):
+                                           ^
+SyntaxError: Unexpected token :
+    at createScript (vm.js:56:10)
+    at Object.runInThisContext (vm.js:97:10)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/Users/h_patel273/Desktop/A3_W4_SQL-master/app.js:32:9)
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ node app
+on 3000
+GET / 304 32.276 ms - -
+GET /javascripts/main.js 304 2.416 ms - -
+^C
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ node app
+on 3000
+GET / 304 31.971 ms - -
+GET /javascripts/main.js 304 2.778 ms - -
+^C
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ node app
+on 3000
+GET / 304 33.121 ms - -
+GET /javascripts/main.js 304 2.828 ms - -
+DELETE /api/F56 404 11.384 ms - 1509
+F55
+hiit api eith the params
+/Users/h_patel273/Desktop/A3_W4_SQL-master/routes/api.js:13
+			throw err; console.log(err);
+			^
+
+Error: ER_BAD_DB_ERROR: Unknown database 'cooperstuff'
+    at Handshake.Sequence._packetToError (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Handshake.ErrorPacket (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/sequences/Handshake.js:130:18)
+    at Protocol._parsePacket (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/Protocol.js:145:48)
+    at Protocol.handshake (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/Protocol.js:52:23)
+    at Connection.connect (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/Connection.js:130:18)
+    at Connection._implyConnect (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/Connection.js:461:10)
+    at Connection.query (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/Connection.js:206:8)
+    at router.get (/Users/h_patel273/Desktop/A3_W4_SQL-master/routes/api.js:11:13)
+    at Layer.handle [as handle_request] (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/layer.js:95:5)
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ 
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ node app
+/Users/h_patel273/Desktop/A3_W4_SQL-master/routes/api.js:20
+			});
+			 ^
+SyntaxError: Unexpected token )
+    at createScript (vm.js:56:10)
+    at Object.runInThisContext (vm.js:97:10)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/Users/h_patel273/Desktop/A3_W4_SQL-master/app.js:37:17)
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ node app
+on 3000
+GET / 304 32.892 ms - -
+GET /javascripts/main.js 304 2.586 ms - -
+F55
+hiit api eith the params
+/Users/h_patel273/Desktop/A3_W4_SQL-master/routes/api.js:13
+			throw err; console.log(err);
+			^
+
+Error: ER_BAD_DB_ERROR: Unknown database 'cooperstuff'
+    at Handshake.Sequence._packetToError (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Handshake.ErrorPacket (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/sequences/Handshake.js:130:18)
+    at Protocol._parsePacket (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/Protocol.js:145:48)
+    at Protocol.handshake (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/Protocol.js:52:23)
+    at Connection.connect (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/Connection.js:130:18)
+    at Connection._implyConnect (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/Connection.js:461:10)
+    at Connection.query (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/Connection.js:206:8)
+    at router.get (/Users/h_patel273/Desktop/A3_W4_SQL-master/routes/api.js:11:13)
+    at Layer.handle [as handle_request] (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/layer.js:95:5)
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ node app
+on 3000
+GET / 304 33.840 ms - -
+GET /javascripts/main.js 304 2.662 ms - -
+^C
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ node app
+/Users/h_patel273/Desktop/A3_W4_SQL-master/routes/api.js:13
+    console.log('you made a ${req.method} call!';
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: missing ) after argument list
+    at createScript (vm.js:56:10)
+    at Object.runInThisContext (vm.js:97:10)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/Users/h_patel273/Desktop/A3_W4_SQL-master/app.js:37:17)
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ node app
+on 3000
+GET / 304 32.881 ms - -
+GET /javascripts/main.js 304 2.757 ms - -
+GET / 304 13.258 ms - -
+GET /javascripts/main.js 304 0.753 ms - -
+you made a ${req.method} call!
+ you made a ${timestamp}
+F55
+hiit api eith the params
+/Users/h_patel273/Desktop/A3_W4_SQL-master/routes/api.js:26
+			throw err; console.log(err);
+			^
+
+Error: ER_BAD_DB_ERROR: Unknown database 'cooperstuff'
+    at Handshake.Sequence._packetToError (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Handshake.ErrorPacket (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/sequences/Handshake.js:130:18)
+    at Protocol._parsePacket (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/Protocol.js:145:48)
+    at Protocol.handshake (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/protocol/Protocol.js:52:23)
+    at Connection.connect (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/Connection.js:130:18)
+    at Connection._implyConnect (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/Connection.js:461:10)
+    at Connection.query (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/mysql/lib/Connection.js:206:8)
+    at router.get (/Users/h_patel273/Desktop/A3_W4_SQL-master/routes/api.js:24:13)
+    at Layer.handle [as handle_request] (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/h_patel273/Desktop/A3_W4_SQL-master/node_modules/express/lib/router/layer.js:95:5)
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ node app
+on 3000
+GET / 304 35.040 ms - -
+GET /javascripts/main.js 304 3.112 ms - -
+GET /getOne/R58 404 15.615 ms - 1509
+GET /getOne/javascripts/main.js 404 9.014 ms - 1509
+GET /getOne/R58 404 7.420 ms - 1509
+GET /getOne/javascripts/main.js 404 4.929 ms - 1509
+GET / 304 3.773 ms - -
+GET /javascripts/main.js 304 0.454 ms - -
+you made a ${req.method} call!
+ you made @ ${timestamp}
+IncomingMessage {
+  _readableState: 
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 16384,
+     buffer: BufferList { head: null, tail: null, length: 0 },
+     length: 0,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: false,
+     endEmitted: false,
+     reading: false,
+     sync: true,
+     needReadable: false,
+     emittedReadable: false,
+     readableListening: false,
+     resumeScheduled: false,
+     defaultEncoding: 'utf8',
+     ranOut: false,
+     awaitDrain: 0,
+     readingMore: true,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  socket: 
+   Socket {
+     connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        bytesRead: 355,
+        _externalStream: {},
+        fd: 20,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0,
+        _consumed: true },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Object],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Object],
+        timeout: [Function],
+        error: [Object],
+        close: [Object],
+        data: [Function: socketOnData],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: true,
+        bufferProcessing: false,
+        onwrite: [Function],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     allowHalfOpen: true,
+     destroyed: false,
+     _bytesDispatched: 0,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 7,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        _pendingResponseData: 0,
+        _connectionKey: '6::::3000' },
+     _server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 7,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        _pendingResponseData: 0,
+        _connectionKey: '6::::3000' },
+     _idleTimeout: 120000,
+     _idleNext: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        destroyed: false,
+        _bytesDispatched: 7692,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Circular],
+        _idleStart: 11554,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: null,
+        _peername: [Object] },
+     _idlePrev: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Object],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idleStart: 13300,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Circular],
+        outgoing: null,
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: 
+      ServerResponse {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: false,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: true,
+        useChunkedEncodingByDefault: true,
+        sendDate: true,
+        _removedHeader: {},
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: false,
+        socket: [Circular],
+        connection: [Circular],
+        _header: null,
+        _headers: [Object],
+        _headerNames: [Object],
+        _onPendingData: [Function: updateOutgoingData],
+        req: [Circular],
+        locals: {},
+        _startAt: undefined,
+        _startTime: undefined,
+        writeHead: [Function: writeHead],
+        __onFinished: [Object] },
+     _peername: { address: '::1', family: 'IPv6', port: 54504 } },
+  connection: 
+   Socket {
+     connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        bytesRead: 355,
+        _externalStream: {},
+        fd: 20,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0,
+        _consumed: true },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Object],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Object],
+        timeout: [Function],
+        error: [Object],
+        close: [Object],
+        data: [Function: socketOnData],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: true,
+        bufferProcessing: false,
+        onwrite: [Function],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     allowHalfOpen: true,
+     destroyed: false,
+     _bytesDispatched: 0,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 7,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        _pendingResponseData: 0,
+        _connectionKey: '6::::3000' },
+     _server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 7,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        _pendingResponseData: 0,
+        _connectionKey: '6::::3000' },
+     _idleTimeout: 120000,
+     _idleNext: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        destroyed: false,
+        _bytesDispatched: 7692,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Circular],
+        _idleStart: 11554,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: null,
+        _peername: [Object] },
+     _idlePrev: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Object],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idleStart: 13300,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Circular],
+        outgoing: null,
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: 
+      ServerResponse {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: false,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: true,
+        useChunkedEncodingByDefault: true,
+        sendDate: true,
+        _removedHeader: {},
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: false,
+        socket: [Circular],
+        connection: [Circular],
+        _header: null,
+        _headers: [Object],
+        _headerNames: [Object],
+        _onPendingData: [Function: updateOutgoingData],
+        req: [Circular],
+        locals: {},
+        _startAt: undefined,
+        _startTime: undefined,
+        writeHead: [Function: writeHead],
+        __onFinished: [Object] },
+     _peername: { address: '::1', family: 'IPv6', port: 54504 } },
+  httpVersionMajor: 1,
+  httpVersionMinor: 1,
+  httpVersion: '1.1',
+  complete: false,
+  headers: 
+   { host: 'localhost:3000',
+     connection: 'keep-alive',
+     origin: 'http://localhost:3000',
+     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
+     accept: '*/*',
+     referer: 'http://localhost:3000/',
+     'accept-encoding': 'gzip, deflate, br',
+     'accept-language': 'en-US,en;q=0.9' },
+  rawHeaders: 
+   [ 'Host',
+     'localhost:3000',
+     'Connection',
+     'keep-alive',
+     'Origin',
+     'http://localhost:3000',
+     'User-Agent',
+     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
+     'Accept',
+     '*/*',
+     'Referer',
+     'http://localhost:3000/',
+     'Accept-Encoding',
+     'gzip, deflate, br',
+     'Accept-Language',
+     'en-US,en;q=0.9' ],
+  trailers: {},
+  rawTrailers: [],
+  upgrade: false,
+  url: '/F56',
+  method: 'DELETE',
+  statusCode: null,
+  statusMessage: null,
+  client: 
+   Socket {
+     connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        bytesRead: 355,
+        _externalStream: {},
+        fd: 20,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0,
+        _consumed: true },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Object],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Object],
+        timeout: [Function],
+        error: [Object],
+        close: [Object],
+        data: [Function: socketOnData],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: true,
+        bufferProcessing: false,
+        onwrite: [Function],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     allowHalfOpen: true,
+     destroyed: false,
+     _bytesDispatched: 0,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 7,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        _pendingResponseData: 0,
+        _connectionKey: '6::::3000' },
+     _server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _connections: 7,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        _pendingResponseData: 0,
+        _connectionKey: '6::::3000' },
+     _idleTimeout: 120000,
+     _idleNext: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        destroyed: false,
+        _bytesDispatched: 7692,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Circular],
+        _idleStart: 11554,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: null,
+        _peername: [Object] },
+     _idlePrev: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Object],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000,
+        nextTick: false },
+     _idleStart: 13300,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Circular],
+        outgoing: null,
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: 
+      ServerResponse {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: false,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: true,
+        useChunkedEncodingByDefault: true,
+        sendDate: true,
+        _removedHeader: {},
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: false,
+        socket: [Circular],
+        connection: [Circular],
+        _header: null,
+        _headers: [Object],
+        _headerNames: [Object],
+        _onPendingData: [Function: updateOutgoingData],
+        req: [Circular],
+        locals: {},
+        _startAt: undefined,
+        _startTime: undefined,
+        writeHead: [Function: writeHead],
+        __onFinished: [Object] },
+     _peername: { address: '::1', family: 'IPv6', port: 54504 } },
+  _consuming: false,
+  _dumped: false,
+  next: [Function: next],
+  baseUrl: '/api',
+  originalUrl: '/api/F56',
+  _parsedUrl: 
+   Url {
+     protocol: null,
+     slashes: null,
+     auth: null,
+     host: null,
+     port: null,
+     hostname: null,
+     hash: null,
+     search: null,
+     query: null,
+     pathname: '/F56',
+     path: '/F56',
+     href: '/F56',
+     _raw: '/F56' },
+  params: {},
+  query: {},
+  res: 
+   ServerResponse {
+     domain: null,
+     _events: { finish: [Object], end: [Function: onevent] },
+     _eventsCount: 2,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: false,
+     upgrading: false,
+     chunkedEncoding: false,
+     shouldKeepAlive: true,
+     useChunkedEncodingByDefault: true,
+     sendDate: true,
+     _removedHeader: {},
+     _contentLength: null,
+     _hasBody: true,
+     _trailer: '',
+     finished: false,
+     _headerSent: false,
+     socket: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        destroyed: false,
+        _bytesDispatched: 0,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Object],
+        _idleStart: 13300,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: [Circular],
+        _peername: [Object] },
+     connection: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        destroyed: false,
+        _bytesDispatched: 0,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Object],
+        _idleStart: 13300,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: [Circular],
+        _peername: [Object] },
+     _header: null,
+     _headers: { 'x-powered-by': 'Express' },
+     _headerNames: { 'x-powered-by': 'X-Powered-By' },
+     _onPendingData: [Function: updateOutgoingData],
+     req: [Circular],
+     locals: {},
+     _startAt: undefined,
+     _startTime: undefined,
+     writeHead: [Function: writeHead],
+     __onFinished: { [Function: listener] queue: [Object] } },
+  _startAt: [ 3401, 712167065 ],
+  _startTime: 2018-02-23T14:52:50.945Z,
+  _remoteAddress: '::1',
+  body: {},
+  secret: undefined,
+  cookies: {},
+  signedCookies: {} }
+DELETE /api/F56 404 37.493 ms - 1501
+^C
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ node app
+on 3000
+GET / 200 35.295 ms - 913
+GET /javascripts/main.js 304 3.560 ms - -
+^C
+tss-hr420-dm25:A3_W4_SQL-master h_patel273$ node app
+on 3000
+GET / 304 35.413 ms - -
+GET /javascripts/main.js 200 6.812 ms - 1974
+you made a ${req.method} call!
+ you made @ ${timestamp}
+POST /api/F56 404 37.112 ms - 1501
+
